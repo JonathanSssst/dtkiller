@@ -1,0 +1,13 @@
+tellraw @s {"text":"===== DTkiller 帮助 =====","color":"gold"}
+tellraw @s [{"text":"配置检测区: ","color":"yellow"},{"text":"/function dtkiller:config/set_detect {x1:..,y1:..,z1:..,x2:..,y2:..,z2:..}","color":"white"}]
+tellraw @s [{"text":"配置竞技区: ","color":"yellow"},{"text":"/function dtkiller:config/set_arena {x1:..,y1:..,z1:..,x2:..,y2:..,z2:..}","color":"white"}]
+tellraw @s [{"text":"配置大厅: ","color":"yellow"},{"text":"/function dtkiller:config/set_lobby {x:..,y:..,z:..}","color":"white"}]
+tellraw @s [{"text":"查看配置: ","color":"yellow"},{"text":"/function dtkiller:config/show","color":"white"}]
+tellraw @s [{"text":"开始游戏: ","color":"yellow"},{"text":"/function dtkiller:game/start","color":"white"}]
+tellraw @s [{"text":"强制结束: ","color":"yellow"},{"text":"/function dtkiller:game/stop","color":"white"}]
+tellraw @s [{"text":"测试-生成假人: ","color":"yellow"},{"text":"/function dtkiller:test_spawn_players","color":"white"}]
+tellraw @s [{"text":"测试-指定职业: ","color":"yellow"},{"text":"/function dtkiller:test_set_role {player:\"名字\",role:\"killer|detective|student\"}","color":"white"}]
+tellraw @s [{"text":"测试-发学生粉笔头: ","color":"yellow"},{"text":"/function dtkiller:test_give_students {n:16}","color":"white"}]
+tellraw @s [{"text":"测试-查看盔甲架: ","color":"yellow"},{"text":"/function dtkiller:test_stands","color":"white"}]
+tellraw @s [{"text":"初始化出生点(金块): ","color":"yellow"},{"text":"/function dtkiller:config/init_stands","color":"white"}]
+tellraw @s [{"text":"提示: 出生点请放置盔甲架并打上 birth 标签（不要重复）","color":"gray"}]
