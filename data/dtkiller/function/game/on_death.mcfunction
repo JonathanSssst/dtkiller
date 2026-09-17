@@ -1,4 +1,5 @@
 tag @s add dead
+tellraw @a [{"text":"【","color":"dark_gray"},{"selector":"@s","color":"white"},{"text":"】死亡！","color":"red"}]
 gamemode spectator @s
 execute store result storage dtkiller:tmp px int 1 run scoreboard players get @s dtk.px
 execute store result storage dtkiller:tmp py int 1 run scoreboard players get @s dtk.py

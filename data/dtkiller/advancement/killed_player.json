@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "killed_player": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"ingame\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "dtkiller:combat/kill_credit"
+  }
+}

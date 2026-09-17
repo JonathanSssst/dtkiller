@@ -9,6 +9,8 @@ scoreboard objectives add dtk.last_throw dummy
 scoreboard objectives add dtk.pickup minecraft.picked_up:minecraft.netherite_scrap
 scoreboard objectives add dtk.last_pickup dummy
 scoreboard objectives add dtk.deaths deathCount
+scoreboard objectives add dtk.kills dummy
+scoreboard objectives add dtk.survive dummy
 scoreboard objectives add dtk.grace dummy
 scoreboard objectives add dtk.freeze dummy
 scoreboard objectives add dtk.trig trigger
@@ -60,7 +62,7 @@ scoreboard players display name 剩余人数 dtk.info [{"text":"剩余人数: ",
 scoreboard players set 碎片刷新 dtk.info 1
 scoreboard players display name 碎片刷新 dtk.info [{"text":"碎片刷新: ","color":"aqua"},{"score":{"name":"#sc","objective":"dtk.math"},"color":"white"},{"text":" 秒","color":"aqua"}]
 
-tellraw @a {"text":"[DTkiller] v1.19 - powered by LSssT","color":"gold"}
+tellraw @a {"text":"[DTkiller] v1.21 - powered by LSssT","color":"gold"}
 tellraw @a {"text":"[DTkiller] 输入 /function dtkiller:help 查看帮助","color":"gray"}
 
 # 配置状态
