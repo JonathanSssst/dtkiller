@@ -61,8 +61,10 @@ scoreboard players set 剩余人数 dtk.info 2
 scoreboard players display name 剩余人数 dtk.info [{"text":"剩余人数: ","color":"yellow"},{"score":{"name":"#alive","objective":"dtk.count"},"color":"white"}]
 scoreboard players set 碎片刷新 dtk.info 1
 scoreboard players display name 碎片刷新 dtk.info [{"text":"碎片刷新: ","color":"aqua"},{"score":{"name":"#sc","objective":"dtk.math"},"color":"white"},{"text":" 秒","color":"aqua"}]
+# 未在游戏时隐藏右侧信息栏（开局时由 begin 打开）
+scoreboard objectives setdisplay sidebar
 
-tellraw @a {"text":"[DTkiller] v1.21 - powered by LSssT","color":"gold"}
+tellraw @a {"text":"[DTkiller] v1.26 - powered by LSssT","color":"gold"}
 tellraw @a {"text":"[DTkiller] 输入 /function dtkiller:help 查看帮助","color":"gray"}
 
 # 配置状态

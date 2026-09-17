@@ -9,5 +9,6 @@ tellraw @s [{"text":"测试-生成假人: ","color":"yellow"},{"text":"/function
 tellraw @s [{"text":"测试-指定职业: ","color":"yellow"},{"text":"/function dtkiller:test_set_role {player:\"名字\",role:\"killer|detective|student\"}","color":"white"}]
 tellraw @s [{"text":"测试-发学生粉笔头: ","color":"yellow"},{"text":"/function dtkiller:test_give_students {n:16}","color":"white"}]
 tellraw @s [{"text":"测试-查看盔甲架: ","color":"yellow"},{"text":"/function dtkiller:test_stands","color":"white"}]
+tellraw @s [{"text":"测试-发放全部物品: ","color":"yellow"},{"text":"/function dtkiller:test_give_items","color":"white"}]
 tellraw @s [{"text":"初始化出生点(金块): ","color":"yellow"},{"text":"/function dtkiller:config/init_stands","color":"white"}]
 tellraw @s [{"text":"提示: 出生点请放置盔甲架并打上 birth 标签（不要重复）","color":"gray"}]

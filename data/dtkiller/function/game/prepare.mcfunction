@@ -11,6 +11,11 @@ clear @a[tag=ingame]
 execute if data storage dtkiller:config arena run function dtkiller:config/scan_forceload with storage dtkiller:config arena
 kill @e[type=item,nbt={Item:{id:"minecraft:netherite_scrap"}}]
 
+# 出生点数量校验（强加载后统计；不足则中止开局）
+execute store result score #stands dtk.count run execute if entity @e[type=armor_stand,tag=birth]
+execute if score #stands dtk.count < #count dtk.count run function dtkiller:game/abort_nospawn
+execute if score #stands dtk.count < #count dtk.count run return 0
+
 # 职业数量
 scoreboard players set #nk dtk.count 1
 scoreboard players set #nd dtk.count 1
