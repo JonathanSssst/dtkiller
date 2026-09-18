@@ -3,7 +3,7 @@
 # 2) 扫描竞技区内所有金块，上方没有 birth 盔甲架则补一个普通盔甲架
 # 3) 再次转换，使新盔甲架也变成 birth 隐形标记
 # 4) 输出统计结果
-tellraw @s {"text":"[DTkiller] 开始初始化出生点 v1.29","color":"gold"}
+tellraw @s {"text":"[DTkiller] 开始初始化出生点 v1.30","color":"gold"}
 execute unless data storage dtkiller:config arena run tellraw @s {"text":"[DTkiller] 未配置竞技区，请先执行 /function dtkiller:config/set_arena","color":"red"}
 execute unless data storage dtkiller:config arena run return 0
 

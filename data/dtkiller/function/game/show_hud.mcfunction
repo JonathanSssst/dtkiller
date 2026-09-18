@@ -16,5 +16,10 @@ bossbar set dtkiller:time name [{"text":"剩余时间 "},{"nbt":"mm","storage":"
 # 剩余人数 (右侧侧边栏)
 scoreboard players operation #alive dtk.count = #k dtk.count
 scoreboard players operation #alive dtk.count += #g dtk.count
+# 刷新侧边栏显示名（分数被隐藏，数值以内嵌文本实时显示）
+execute store result storage dtkiller:tmp alive int 1 run scoreboard players get #alive dtk.count
+execute store result storage dtkiller:tmp sc int 1 run scoreboard players get #sc dtk.math
+scoreboard players display name 剩余人数 dtk.info [{"text":"剩余人数: ","color":"yellow"},{"nbt":"alive","storage":"dtkiller:tmp"}]
+scoreboard players display name 碎片刷新 dtk.info [{"text":"碎片刷新: ","color":"aqua"},{"nbt":"sc","storage":"dtkiller:tmp"},{"text":" 秒","color":"aqua"}]
 # 节流重置
 scoreboard players set #hud dtk.math 10
