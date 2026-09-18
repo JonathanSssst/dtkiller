@@ -12,6 +12,7 @@ tellraw @s [{"text":"测试-查看盔甲架: ","color":"yellow"},{"text":"/funct
 tellraw @s [{"text":"测试-发放全部物品: ","color":"yellow"},{"text":"/function dtkiller:test_give_items","color":"white"}]
 tellraw @s [{"text":"测试-检测区人数: ","color":"yellow"},{"text":"/function dtkiller:test_count","color":"white"}]
 tellraw @s [{"text":"初始化出生点(金块): ","color":"yellow"},{"text":"/function dtkiller:config/init_stands","color":"white"}]
+tellraw @s [{"text":"放置开始NPC: ","color":"yellow"},{"text":"/function dtkiller:npc/spawn_start","color":"white"}]
 tellraw @s [{"text":"放置大厅NPC: ","color":"yellow"},{"text":"/function dtkiller:npc/spawn_lobby","color":"white"}]
 tellraw @s [{"text":"放置返回NPC: ","color":"yellow"},{"text":"/function dtkiller:npc/spawn_return","color":"white"}]
 tellraw @s [{"text":"提示: 出生点请放置盔甲架并打上 birth 标签（不要重复）","color":"gray"}]

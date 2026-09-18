@@ -25,6 +25,7 @@ scoreboard objectives add dtk.rx dummy
 scoreboard objectives add dtk.ry dummy
 scoreboard objectives add dtk.rz dummy
 scoreboard objectives add dtk.rset dummy
+scoreboard objectives add dtk.npccd dummy
 kill @e[type=item,tag=dtk_scrap]
 
 # 常量
@@ -69,7 +70,7 @@ scoreboard players display name 碎片刷新 dtk.info [{"text":"碎片刷新: ",
 # 未在游戏时隐藏右侧信息栏（开局时由 begin 打开）
 scoreboard objectives setdisplay sidebar
 
-tellraw @a {"text":"[DTkiller] v1.41 - powered by LSssT","color":"gold"}
+tellraw @a {"text":"[DTkiller] v1.44 - powered by LSssT","color":"gold"}
 tellraw @a {"text":"[DTkiller] 输入 /function dtkiller:help 查看帮助","color":"gray"}
 
 # 配置状态

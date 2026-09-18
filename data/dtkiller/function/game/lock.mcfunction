@@ -37,6 +37,6 @@ function dtkiller:game/assign_students
 
 scoreboard players set #state dtk.state 2
 scoreboard players set #timer dtk.timer 100
-title @a title {"text":"5","color":"gold","bold":true}
+title @a title {"text":"5","color":"gold"}
 tellraw @a {"text":"[DTkiller] 参与名单已锁定，5 秒后传送（期间加入的玩家不参战）","color":"gold"}
 return 0

@@ -10,5 +10,5 @@ scoreboard objectives setdisplay sidebar dtk.info
 scoreboard players set #hud dtk.math 0
 kill @e[type=item,nbt={Item:{id:"minecraft:netherite_scrap"}}]
 function dtkiller:loot/spawn_first
-title @a title {"text":"游戏开始！","color":"green","bold":true}
+title @a title {"text":"游戏开始！","color":"green"}
 playsound minecraft:entity.player.levelup master @a
