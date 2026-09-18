@@ -1,4 +1,4 @@
-scoreboard players set #state dtk.state 2
+scoreboard players set #state dtk.state 3
 gamerule natural_health_regeneration false
 function dtkiller:game/teleport
 function dtkiller:combat/give_kit

@@ -3,7 +3,7 @@ tellraw @s [{"text":"配置检测区: ","color":"yellow"},{"text":"/function dtk
 tellraw @s [{"text":"配置竞技区: ","color":"yellow"},{"text":"/function dtkiller:config/set_arena {x1:..,y1:..,z1:..,x2:..,y2:..,z2:..}","color":"white"}]
 tellraw @s [{"text":"配置大厅: ","color":"yellow"},{"text":"/function dtkiller:config/set_lobby {x:..,y:..,z:..}","color":"white"}]
 tellraw @s [{"text":"查看配置: ","color":"yellow"},{"text":"/function dtkiller:config/show","color":"white"}]
-tellraw @s [{"text":"开始游戏: ","color":"yellow"},{"text":"/function dtkiller:game/start","color":"white"}]
+tellraw @s [{"text":"手动触发开局检测: ","color":"yellow"},{"text":"/function dtkiller:game/start","color":"white"}]
 tellraw @s [{"text":"强制结束: ","color":"yellow"},{"text":"/function dtkiller:game/stop","color":"white"}]
 tellraw @s [{"text":"测试-生成假人: ","color":"yellow"},{"text":"/function dtkiller:test_spawn_players","color":"white"}]
 tellraw @s [{"text":"测试-指定职业: ","color":"yellow"},{"text":"/function dtkiller:test_set_role {player:\"名字\",role:\"killer|detective|student\"}","color":"white"}]
