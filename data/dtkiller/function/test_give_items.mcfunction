@@ -4,6 +4,6 @@ give @s minecraft:snowball[minecraft:custom_name={text:"粉笔头"},minecraft:cu
 give @s minecraft:snowball[minecraft:custom_name={text:"粉笔头"},minecraft:custom_model_data={floats:[1006]},minecraft:use_cooldown={seconds:10.0,cooldown_group:"dtkiller:detective_chalk"}] 1
 give @s minecraft:snowball[minecraft:custom_name={text:"粉笔头"},minecraft:custom_model_data={floats:[1007]}] 1
 give @s minecraft:netherite_scrap[minecraft:custom_name={text:"合金碎片"},minecraft:custom_model_data={floats:[1004]}] 1
-give @s minecraft:compass[minecraft:custom_name={text:"追踪器"},minecraft:item_model="dtkiller:tracker",minecraft:lodestone_tracker={target:{dimension:"minecraft:overworld",pos:[I;0,0,0]},tracked:false}] 1
+give @s minecraft:compass[minecraft:custom_name={text:"追踪器"},minecraft:lodestone_tracker={target:{dimension:"minecraft:overworld",pos:[I;0,0,0]},tracked:false}] 1
 tellraw @s {"text":"[测试] 已发放全部 DTkiller 自定义物品","color":"gold"}
 return 0
