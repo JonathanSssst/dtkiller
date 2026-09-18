@@ -70,7 +70,7 @@ scoreboard players display name 碎片刷新 dtk.info [{"text":"碎片刷新: ",
 # 未在游戏时隐藏右侧信息栏（开局时由 begin 打开）
 scoreboard objectives setdisplay sidebar
 
-tellraw @a {"text":"[DTkiller] v1.44 - powered by LSssT","color":"gold"}
+tellraw @a {"text":"[DTkiller] v1.45 - powered by LSssT","color":"gold"}
 tellraw @a {"text":"[DTkiller] 输入 /function dtkiller:help 查看帮助","color":"gray"}
 
 # 配置状态
