@@ -1,4 +1,5 @@
 title @a reset
+gamerule natural_health_regeneration true
 bossbar set dtkiller:time visible false
 scoreboard objectives setdisplay sidebar
 execute if data storage dtkiller:config lobby run function dtkiller:game/tp_lobby with storage dtkiller:config lobby

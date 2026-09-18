@@ -42,7 +42,8 @@ scoreboard players set #scrap dtk.timer 0
 # 游戏规则 (1.21.11 snake_case)
 gamerule keep_inventory true
 gamerule immediate_respawn true
-gamerule natural_health_regeneration false
+gamerule natural_health_regeneration true
+gamerule fall_damage false
 gamerule advance_time false
 gamerule advance_weather false
 gamerule spawn_mobs false
@@ -70,7 +71,7 @@ scoreboard players display name 碎片刷新 dtk.info [{"text":"碎片刷新: ",
 # 未在游戏时隐藏右侧信息栏（开局时由 begin 打开）
 scoreboard objectives setdisplay sidebar
 
-tellraw @a {"text":"[DTkiller] v1.45 - powered by LSssT","color":"gold"}
+tellraw @a {"text":"[DTkiller] v1.47 - powered by LSssT","color":"gold"}
 tellraw @a {"text":"[DTkiller] 输入 /function dtkiller:help 查看帮助","color":"gray"}
 
 # 配置状态
