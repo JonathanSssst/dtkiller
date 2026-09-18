@@ -4,6 +4,7 @@ bossbar set dtkiller:time visible false
 scoreboard objectives setdisplay sidebar
 execute if data storage dtkiller:config lobby run function dtkiller:game/tp_lobby with storage dtkiller:config lobby
 gamemode survival @a[tag=ingame]
+team empty dtk_hidden
 clear @a[tag=ingame]
 effect clear @a[tag=ingame]
 tag @a remove ingame

@@ -3,6 +3,7 @@ gamerule natural_health_regeneration false
 function dtkiller:game/teleport
 function dtkiller:combat/give_kit
 gamemode adventure @a[tag=ingame]
+team join dtk_hidden @a[tag=ingame]
 scoreboard players set #timer dtk.timer 12000
 bossbar set dtkiller:time players @a
 bossbar set dtkiller:time visible true

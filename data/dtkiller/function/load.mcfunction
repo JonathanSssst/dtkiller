@@ -44,6 +44,10 @@ gamerule keep_inventory true
 gamerule immediate_respawn true
 gamerule natural_health_regeneration true
 gamerule fall_damage false
+gamerule drowning_damage false
+gamerule fire_damage false
+gamerule freeze_damage false
+gamerule locator_bar false
 gamerule advance_time false
 gamerule advance_weather false
 gamerule spawn_mobs false
@@ -52,6 +56,10 @@ gamerule show_advancement_messages false
 gamerule show_death_messages false
 gamerule random_tick_speed 0
 gamerule fire_spread_radius_around_player 0
+
+# 隐藏玩家名字标签（防追踪；开局时把人加入该队伍，结束后清空）
+team add dtk_hidden
+team modify dtk_hidden nametagVisibility never
 
 # 剩余时间 bossbar
 bossbar remove dtkiller:time
@@ -71,7 +79,7 @@ scoreboard players display name 碎片刷新 dtk.info [{"text":"碎片刷新: ",
 # 未在游戏时隐藏右侧信息栏（开局时由 begin 打开）
 scoreboard objectives setdisplay sidebar
 
-tellraw @a {"text":"[DTkiller] v1.47 - powered by LSssT","color":"gold"}
+tellraw @a {"text":"[DTkiller] v1.49 - powered by LSssT","color":"gold"}
 tellraw @a {"text":"[DTkiller] 输入 /function dtkiller:help 查看帮助","color":"gray"}
 
 # 配置状态
